@@ -25,15 +25,15 @@ function calculateBMI() {
 	else {
 		const bmi = (w/(h/100*h/100)).toFixed(2);
 		result.innerHTML = `Your Calculated BMI is: ${bmi}<br>`;
-		if(bmi<=18.5) {
+		if(bmi<=20) {
 			changeTextToRed();
 			result.innerHTML += `Oops! You are underweight.<br>Get some calories.`;
 		}
-		else if(bmi>=18.5 && bmi<=22.9) {
+		else if(bmi>=20 && bmi<=25.9) {
 			changeTextToGreen();
 			result.innerHTML += `Wow! You are healthy.<br>Just like me.`;
 		}
-		else if(bmi>=23.0 && bmi<=24.9) {
+		else if(bmi>=25.0 && bmi<=29.9) {
 			changeTextToRed();
 			result.innerHTML += `Oops! You are overweight.<br>You know dieting?`;
 		}
